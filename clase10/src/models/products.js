@@ -4,6 +4,17 @@ let products = [
     { id: 3, name: 'Tablet', price: 500 }
 ];
 
-export const getProducts = (req, res) => {
-    res.json(products);
+let json = {"message": "Respuesta JSON", "status": "success"}
+
+
+export const getProducts = () => {
+    return products;
 };  
+
+export const getHTML = () =>{
+    return "<h1>Respuesta HTML</h1>"
+}
+
+export const getJSON = () =>{
+    return JSON.stringify(json);
+}

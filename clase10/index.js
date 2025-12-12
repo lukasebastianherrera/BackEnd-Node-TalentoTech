@@ -15,7 +15,8 @@ app.get("/JSON", (req, res) => {
 });
 
 app.use("/api/productos", productsRouter)
-
+app.use("/HTML", productsRouter)
+app.use("/JSON", productsRouter)
 const PORT = 3000;
 
 app.listen(PORT, () => {
